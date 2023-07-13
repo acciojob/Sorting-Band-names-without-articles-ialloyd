@@ -4,6 +4,7 @@ let touristSpots = ['The Virupaksha Temple', 'Victoria Memorial', 'Tajmahal'];
 let list="";
 for(let element of touristSpots.sort((a, b) => {
     const strip = (bandName) => bandName.replace(/^(a |an |the )/i, '');
+	console.log(strip);
     return strip(a)-strip(b);
   })){
 
